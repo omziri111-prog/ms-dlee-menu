@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS DLIN - منيو الحلويات</title>
+
+<style>
+  /* الخطوط والألوان */
+  body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg, #0b0b0b, #1a1a1a); /* أسود متدرج */
+    color: #f5c542; /* ذهبي فاخر */
+    text-align: center;
+  }
+
+  .overlay {
+    min-height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* مكان اللوغو */
+  .logo-placeholder {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle at center, #ffd700, #b58900);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b0b0b;
+    text-shadow: 0 0 6px #fff;
+    margin-bottom: 15px;
+  }
+  .logo-img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 34px;
+    color: #ffffff;
+    margin: 0 0 35px 0;
+    text-shadow: 0 0 12px #f5c542;
+  }
+
+  /* أقسام المنيو */
+  .menu-section {
+    background: rgba(0, 0, 0, 0.75);
+    width: 90%;
+    max-width: 650px;
+    padding: 28px;
+    margin-bottom: 28px;
+    border-radius: 15px;
+    border: 1px solid #f5c542;
+    box-shadow: 0 0 25px rgba(245, 197, 66, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .menu-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 45px rgba(245, 197, 66, 0.9);
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 22px;
+    border-bottom: 2px solid #f5c542;
+    padding-bottom: 12px;
+    text-shadow: 0 0 6px #f5c542;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px dashed rgba(245, 197, 66, 0.5);
+    font-size: 21px;
+    color: #f5c542;
+  }
+
+  .price {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 15px;
+    color: #f5c542;
+    text-shadow: 0 0 6px #f5c542;
+  }
+
+  @media (max-width: 600px) {
+    .logo-placeholder {
+      width: 140px;
+      height: 140px;
+      font-size: 22px;
+    }
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+    li { font-size: 18px; }
+  }
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+  <!-- مكان اللوغو -->
+  <div class="logo-placeholder">
+    <img src="photo_2025-12-03_19-24-33.jpg" alt="logo" class="logo-img"></div>
+  <h1>منيو الحلويات</h1>
+
+  <!-- الوافل -->
+  <div class="menu-section">
+    <h2>الوافل</h2>
+    <ul>
+      <li><span>وافل نوتيلا</span> <span class="price">٣٠٠٠</span></li>
+      <li><span>وافل بستاشيو</span> <span class="price">٤٥٠٠</span></li>
+      <li><span>وافل كيندر</span> <span class="price">٤٠٠٠</span></li>
+    </ul>
+  </div>
+
+  <!-- الكريب -->
+  <div class="menu-section">
+    <h2>الكريب</h2>
+    <ul>
+      <li><span>كريب نوتيلا</span> <span class="price">٣٠٠٠</span></li>
+      <li><span>كريب بستاشيو</span> <span class="price">٤٥٠٠</span></li>
+      <li><span>كريب كيندر</span> <span class="price">٤٠٠٠</span></li>
+      <li><span>كريب دبي</span> <span class="price">٥٠٠٠</span></li>
+    </ul>
+  </div>
+
+  <!-- الإضافات -->
+  <div class="menu-section">
+    <h2>الإضافات</h2>
+    <ul>
+      <li><span>موز شوكولا</span> <span class="price">١٥٠٠</span></li>
+      <li><span>موز بستاشيو</span> <span class="price">٢٠٠٠</span></li>
+      <li><span>فرولا شوكولا</span> <span class="price">١٥٠٠</span></li>
+      <li><span>فرولا بستاشيو</span> <span class="price">٢٠٠٠</span></li>
+      <li><span>فرولا دبي</span> <span class="price">٣٥٠٠</span></li>
+    </ul>
+  </div>
+
+  <!-- المشروبات -->
+  <div class="menu-section">
+    <h2>المشروبات</h2>
+    <ul>
+      <li><span>شاي</span> <span class="price">٥٠٠</span></li>
+      <li><span>كابتشينو S</span> <span class="price">١٠٠٠</span></li>
+      <li><span>كابتشينو XL</span> <span class="price">٢٠٠٠</span></li>
+    </ul>
+  </div>
+
+  <footer>© 2025 MS DLIN - جميع الحقوق محفوظة</footer>
+
+</div>
+</body>
+</html>
